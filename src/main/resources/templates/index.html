@@ -25,7 +25,13 @@
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
+                <!--page: https://github.com/login/oauth/authorize
+                    query parameter: client_id (got an id after register from github)
+                                     redirect_uri = call back page
+                                     scope
+                                     state = random
+                -->
+                <li><a href="https://github.com/login/oauth/authorize?client_id=9691b9565f23ace9c17a&redirect_uri=http://localhost:8882/callback&scope=user&state=1">Login</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">me<span class="caret"></span></a>
