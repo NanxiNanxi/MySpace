@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"> <!--引入thymeleaf主题的功能-->
 <head>
     <title>Nanxi's Space</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -31,15 +31,18 @@
                                      scope
                                      state = random
                 -->
-                <li><a href="https://github.com/login/oauth/authorize?client_id=9691b9565f23ace9c17a&redirect_uri=http://localhost:8882/callback&scope=user&state=1">Login</a></li>
-                <li class="dropdown">
+                <!--th 从thymeleaf主题来的功能-->
+                <li class="dropdown" th:if = "${session.user != null}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                       aria-haspopup="true" aria-expanded="false">me<span class="caret"></span></a>
+                       aria-haspopup="true" aria-expanded="false" th:text="${session.user.getName()}"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Message</a></li>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Log Out</a></li>
                     </ul>
+                </li>
+
+                <li th:if="${session.user} ==null"><a href="https://github.com/login/oauth/authorize?client_id=9691b9565f23ace9c17a&redirect_uri=http://localhost:8882/callback&scope=user&state=1">Login</a>
                 </li>
             </ul>
         </div>

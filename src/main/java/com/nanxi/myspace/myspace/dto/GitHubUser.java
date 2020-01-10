@@ -1,4 +1,4 @@
-package com.nanxi.myspace.myspace.controller.dto;
+package com.nanxi.myspace.myspace.dto;
 
 //for github user api's parameters
 public class GitHubUser {
@@ -28,5 +28,14 @@ public class GitHubUser {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    @Override
+    public String toString() {
+        return "GitHubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                '}';
     }
 }

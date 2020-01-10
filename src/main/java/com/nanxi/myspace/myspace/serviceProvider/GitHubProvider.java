@@ -1,8 +1,8 @@
 package com.nanxi.myspace.myspace.serviceProvider;
 
 import com.alibaba.fastjson.JSON;
-import com.nanxi.myspace.myspace.controller.dto.AccessTokenDTO;
-import com.nanxi.myspace.myspace.controller.dto.GitHubUser;
+import com.nanxi.myspace.myspace.dto.AccessTokenDTO;
+import com.nanxi.myspace.myspace.dto.GitHubUser;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.nanxi.myspace.myspace.controller.dto;
+package com.nanxi.myspace.myspace.dto;
 //DTO - data transfer object
 //parameters use for getting access token from git hub https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/
 public class AccessTokenDTO {
