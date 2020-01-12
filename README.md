@@ -12,4 +12,22 @@
 [okHttp](https://square.github.io/okhttp/)    
 [MyBatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)   
 [Maven Repository - H2](https://mvnrepository.com/artifact/com.h2database/h2)  
-[Maven Repository - FastJSON](https://mvnrepository.com/artifact/com.alibaba/fastjson)
+[Maven Repository - FastJSON](https://mvnrepository.com/artifact/com.alibaba/fastjson)  
+
+## Project Diary (Blog) 
+[Nanxi's Place](https://nanxinanxi.github.io/)
+
+## Script  
+```sql
+create table USER
+(
+	ID INT auto_increment,
+	ACCOUNT_ID VARCHAR(100),
+	NAME VARCHAR(50),
+	TOKEN CHAR(36),
+	GMT_CREATE BIGINT,
+	GMT_MODIFIED BIGINT,
+	constraint USER_PK
+		primary key (ID)
+);
+```
